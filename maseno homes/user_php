@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maseno homes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="banner" >
+        <img src="images/logo.png" class="logo">
+        <div class="banner-text">
+            <h1>Maseno homes</h1>
+            <p>choose the best life</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>find out</a>
+                <a href="#"><span></span>read more</a>
+            </div>
+        </div>
+    </section>
+
+ <div id="sidenav">
+    <nav>
+        <ul>
+            <li><a href="#banner"></a>HOME </li>
+            <li><a href="#feature"></a>FEATURES</li>
+            <li><a href="#service"></a>SERVICES</li>
+            <li><a href="#review"></a>REVIEWS</li>
+            <li><a href="#banner"></a>CONTACT US</li>
+        </ul>
+    </nav>
+ </div>
+ <div id="menubtn">
+    <img src="images/menu.png" id="menu">
+ </div> 
+ <section id="feature">
+    <div class="title-text">
+        <p>FEATURES</p>
+        <h1>Why choose us</h1>
+    </div>
+    <div class="feature-box">
+        <div class="features">
+            <h1>Quality assurance in hostel booking</h1>
+            <div class="features-desc">
+            <div class="features-icon"></div>
+            <div class="features-text">
+                <p>hostel booking made easy <br>life made easier</p>
+            </div>
+            </div>
+        </div>
+        <div class="features-img">
+            <img src="images/banner.jpg">
+
+        </div>
+    </div>
+ </section>  
+ <section id="service">
+    <div class="title-text">
+        <p>SERVICES</p>
+        <h4>Room booking.
+            Book hostels around Maseno easily with our user-friendly booking system. Choose from a variety of room types to suit your needs.
+            
+            24/7 Customer Support.
+            Our customer support team is available around the clock to assist you with any queries or concerns.
+            
+            Free Wi-Fi.
+            Stay connected with our high-speed internet available in all rooms and common areas.
+            
+            Housekeeping.
+            Enjoy clean and comfortable rooms with our daily housekeeping service.</h4>
+    </div>
+ </section>
+ <section id="review">
+ <div class="title-text">
+    <p>REVIEWS</p>
+    <h1>What client says</h1>
+ </div>
+ <div class="testimonial-row">
+    <div class="testimonial-col">
+        <P>Book rooms easily with our user-friendly booking system. Choose from a variety of room types to suit your needs.</P>
+    </div>
+    <div class="testimonial-col">
+        <P>Book rooms easily with our user-friendly booking system. Choose from a variety of room types to suit your needs.</P>
+    </div>
+    <div class="testimonial-col">
+        <P>Book rooms easily with our user-friendly booking system. Choose from a variety of room types to suit your needs.</P>
+    </div>
+ </div>
+</section>
+<script>
+    var menubtn=document.getElementById("menubtn")
+    var sidenav=document.getElementById("sidenav")
+    var menu=document.getElementById("menu")
+menubtn.onclick=function(){
+    if(sidenav.style.right=="-250px"){
+        sidenav.style.right="0";
+    }
+    else{
+        sidenav.style.right="-250px";
+    }
+}  
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000
+});  
+</script>
+</body>
+</html>
